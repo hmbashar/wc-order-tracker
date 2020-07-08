@@ -1,0 +1,69 @@
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.alishop-tracking-title h2 {
+    font-size: 20px;
+}
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+.alishop-tracking-container {
+    padding: 0px 5px;
+}
+.alishop-tracking {
+    width: 100%;
+    margin: 0 auto;
+}
+table tr td:first-child {
+    min-width: 150px !important;
+    line-height: 30px;
+}
+.alishop-tracking-container {
+    margin-top: 18px;
+}
+.alishop-tracking-title {
+    text-align: center;
+}
+.alishop-tracking-from form label {
+    padding-right: 10px;
+    font-weight: 400;
+}
+.alishop-tracking-from {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.alishop-tracking-title h2 {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.alishop-tracking-title h2 {
+    font-size: 18px;
+}
+
+
+}
+
+
