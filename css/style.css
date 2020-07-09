@@ -36,11 +36,31 @@ tr:nth-child(odd) {
     box-shadow: 0px 0px 9px 1px rgb(136,136,136);
     margin-bottom: 1em;
     margin-top: 1em;
+    position: relative;
+}
+
+@keyframes CBWC_Tracking {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .alishop-tracking-progress {
-    height: 40px;
-    background: linear-gradient(to bottom, rgb(34,201,163) 0%, rgb(145,225,200) 50%, rgb(145,225,200) 51%, rgb(34,201,163) 100%);
+    height: 70px;
+        background: #0cc5b7; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cc5b7', endColorstr='#2bd891',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: 400% 400%;
+    color:#fff;
+    animation: CBWC_Tracking 15s ease infinite;
 }
 
 .alishop-tracking-progress {}
@@ -82,4 +102,102 @@ tr:nth-child(odd) {
     font-weight: 600;
     font-size: 20px;
     color: #666;
+}
+
+.alishop_wc_traking_steps {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 97%;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  margin: 0 auto;
+}
+.alishop-wc-traking-round {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #ACACA6;
+  border-radius: 50%;
+  transition: background 1s;
+  margin: 0 auto;
+}
+
+.alishop-wc-traking-round.active:before {
+    content:'';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 10px 0 10px;
+  border-color: #23d5ab transparent transparent transparent;
+  display:block;
+  -webkit-animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;  
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor:pointer;
+    top: -36px;
+    position: absolute;
+}
+
+.alishop-wc-traking-round.active:after{
+ content: 'Order';
+display: inline-block;
+position: absolute;
+top: -62px;
+left: -44px;
+right: 0;
+color: #666;
+-webkit-animation-name: bounce;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: infinite;
+animation-name: bounce;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+font-size: 14px;
+text-align: center;
+width: 125px;
+}
+.alishop-wc-traking-round.active.ali-wc-payment:after{
+    content:'Payment Pending';
+}
+
+.alishop-wc-traking-round.active.ali-wc-hold:after{
+    content:'On Hold';
+}
+.alishop-wc-traking-round.active.ali-wc-processing:after{
+    content:'Processing';
+}
+.alishop-wc-traking-round.active.ali-wc-shipping:after{
+    content:'Shipped';
+}
+.alishop-wc-traking-round.active.ali-wc-delivered:after{
+    content:'Delivered';
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes bounce {
+    0%   { margin-top:0; -webkit-animation-timing-function: ease-out; }
+    50%  { margin-top:15px; -webkit-animation-timing-function: ease-in; }
+    100% { margin-top:0; -webkit-animation-timing-function: ease-out; }
+}
+
+/* Standard syntax */
+@keyframes bounce {
+    0%   { margin-top:0; animation-timing-function: ease-out; }
+    50%  { margin-top:15px; animation-timing-function: ease-in; }
+    100% { margin-top:0; animation-timing-function: ease-out; }
+}
+.alishop_wc_traking_step p {color:white;}
+.alishop-wc-traking-img img{width: 30px;margin-bottom: 3px;}
+
+.alishop_wc_traking_step {
+  text-align: center;
+  position: relative;
+}
+.alishop-wc-traking-img {
+  margin: 0 auto;
 }
