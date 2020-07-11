@@ -44,9 +44,15 @@ table tr td:first-child {
     font-size: 16px;
 }
 
+@keyframes alishop_left_to_right {
+  100% {
+    transform: translateX(60px);
+  }
+}
 
-
-
+.alishop_shipping.active {
+    animation: alishop_left_to_right 2s linear infinite;
+}
 
 
 
@@ -63,6 +69,15 @@ table tr td:first-child {
     font-size: 18px;
 }
 
+@keyframes alishop_left_to_right {
+
+  100% {
+    transform: translateX(65px);
+  }
+}
+.alishop_shipping.active {
+    animation: alishop_left_to_right 2s linear infinite;
+}
 
 }
 

@@ -1,31 +1,26 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-table {
+.alishop-tracking-container table {
     width: 100%;
 }
 
-tr {
-    width: 100% !important;
-    display: block !important;
+.alishop-tracking-container tr {
+    vertical-align: middle;
 }
 
-table tr td:first-child{min-width: 300px !important;border: 0;font-size: 16px;font-style: inherit;margin: 0;outline: 0;padding: 0;color: #404040;vertical-align: baseline;font-family: 'Lato',Helvetica, sans-serif !important;font-weight: 400;line-height: 25px;}
+.alishop-tracking-container table tr td:first-child{font-size: 16px;color: #404040;vertical-align: middle;font-family: 'Lato',Helvetica, sans-serif !important;font-weight: 400;}
 
 
-td {
-    z-index: 999;
+.alishop-tracking-container td {
+    padding: 9px;
 }
 
-tr:nth-child(odd) {
+.alishop-tracking-container tr:nth-child(odd) {
   background-color: #dddddd;
 }
 .alishop-tracking-container {
     margin-top: 50px;
 }
-.alishop-tracking{width: 1140px; margin: 0 auto;}
+.alishop-tracking{max-width: 1140px; margin: 30px auto;}
 .alishop-tracking-porgressbar {
     border-style: solid;
     border-width: 1px;
@@ -37,22 +32,10 @@ tr:nth-child(odd) {
     margin-bottom: 1em;
     margin-top: 1em;
     position: relative;
-}
-
-@keyframes CBWC_Tracking {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    height: 75px;
 }
 
 .alishop-tracking-progress {
-    height: 70px;
         background: #0cc5b7; /* Old browsers */
     background: -moz-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Chrome10-25,Safari5.1-6 */
@@ -61,6 +44,11 @@ tr:nth-child(odd) {
     background-size: 400% 400%;
     color:#fff;
     animation: CBWC_Tracking 15s ease infinite;
+    position: absolute;
+    bottom: 0;
+        height: 34px;
+        text-align: center;
+        border-radius: 3px;
 }
 
 .alishop-tracking-progress {}
@@ -89,7 +77,7 @@ tr:nth-child(odd) {
 }
 .alishop-tracking-from form label {
     font-weight: 800;
-    padding-right: 79px;
+    padding-right: 5px;
     font-family: 'Lato', sans-serif;
     color: #666;
 }
@@ -109,7 +97,7 @@ tr:nth-child(odd) {
   display: flex;
   justify-content: space-between;
   width: 97%;
-  top: 10px;
+  top: 6px;
   left: 10px;
   right: 10px;
   margin: 0 auto;
@@ -178,22 +166,14 @@ width: 125px;
     content:'Delivered';
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes bounce {
-    0%   { margin-top:0; -webkit-animation-timing-function: ease-out; }
-    50%  { margin-top:15px; -webkit-animation-timing-function: ease-in; }
-    100% { margin-top:0; -webkit-animation-timing-function: ease-out; }
-}
-
-/* Standard syntax */
-@keyframes bounce {
-    0%   { margin-top:0; animation-timing-function: ease-out; }
-    50%  { margin-top:15px; animation-timing-function: ease-in; }
-    100% { margin-top:0; animation-timing-function: ease-out; }
-}
 .alishop_wc_traking_step p {color:white;}
-.alishop-wc-traking-img img{width: 30px;margin-bottom: 3px;}
+.alishop-wc-traking-img img{width: 30px;margin-bottom: 12px;}
 
+.alishop_shipping{position: absolute;
+left: 0;}
+.alishop_shipping.active{
+  animation: alishop_left_to_right 5s linear infinite; 
+}
 .alishop_wc_traking_step {
   text-align: center;
   position: relative;
@@ -201,3 +181,27 @@ width: 125px;
 .alishop-wc-traking-img {
   margin: 0 auto;
 }
+
+.alishop-wc-traking-round.active{        background: #0cc5b7; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cc5b7', endColorstr='#2bd891',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-size: 400% 400%;  
+    animation: CBWC_Tracking 15s ease infinite;
+    border-color:#fff;
+}
+
+.alishop_notice{color:red;}
+.alishop_progress{animation: alishop_wc_circle 6s linear infinite;}
+
+.alishop_wc_order_cancelled {
+  font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width:100% !important;
+}
+.alishop-tracking-form-area{display: flex;}
+.alishop-tracking-form-field{}

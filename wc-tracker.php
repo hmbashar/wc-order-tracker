@@ -21,6 +21,7 @@ define('CB_WC_TRACKER_PATH', plugin_dir_path(__FILE__));
 //Enqueue Style for Plugin
 function cb_domain_checker_scripts(){
 
+	wp_enqueue_style('cb-wc-animate', CB_WC_TRACKER_URL .'css/ali-animate.css');
 	wp_enqueue_style('cb-wc-tracker-style', CB_WC_TRACKER_URL .'css/style.css');
 	wp_enqueue_style('cb-wc-tracker-responsive', CB_WC_TRACKER_URL .'css/responsive.css');
 
