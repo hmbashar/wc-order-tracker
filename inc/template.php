@@ -10,76 +10,38 @@ if ( !defined( 'ABSPATH' ) ) exit;
 	<div class="alishop-tracking-container">
 		<div class="alishop-tracking">
 			<div class="alishop-tracking-title">
-				<h2>Order Tracker</h2>
+				<h2><?php do_action( 'alishop_order_tracking_heading' );?></h2>
 			</div>
 			
 			<!--Tracking Form -->
 			<div class="alishop-tracking-from">
-				<form method="GET">
+				<form method="POST">
 					<div class="alishop-tracking-form-area">
 						<div class="alishop-tracking-form-field">
-							<label for="order_number">Order Number:</label>
+							<label for="order_number"><?php do_action('alishop_field_text_order_number');?></label>
 							<input type="text" id="order_number" name="order_number" placeholder="Order Number...">
 						</div>
 						<div class="alishop-tracking-form-field">
-							<label for="phone">Phone:</label>
+							<label for="phone"><?php do_action('alishop_field_text_phone_number');?></label>
 							<input type="text" id="phone" name="phone" placeholder="Phone Number..."> 
 						</div>
 						<div class="alishop-tracking-form-field alishop-traking-form-submit">
-							<input type="submit" value="Track Order">
+							<?php wp_nonce_field('alishop_nonce_data'); ?>							
+							<input type="submit" value="<?php do_action('alishop_submit_button_text');?>">
 						</div>	
 					</div>					
 				</form>
 			</div><!--/ Tracking Form -->
 
-			<?php 
-				$get_order_number = $_GET['order_number'];
-				$get_phone_number = $_GET['phone'];
-
-				if(empty($get_order_number) || empty($get_phone_number)) { // search field empty check
-					printf('%s Order Number & Phone field is required %s', '<h3 class="alishop_notice">', '</h3>');
-				}else {
-					if(!isset($get_order_number)) { //order number empty
-						$order = NULL;
-
-					}else {
-						
-						$order = wc_get_order( $get_order_number ); // set order number
-
-					
-						$order_data = $order->get_data(); // The Order data
-
-						// get user phone number from shipping form
-						$user_shipping_phone_number = isset($order_data['shipping']['phone']) ? $order_data['shipping']['phone'] : '' ;
-
-						// get user phone number from billing form
-						$user_billing_phone_number = isset($order_data['billing']['phone']) ? $order_data['billing']['phone'] : ''; 
-
-						// set phone number value
-						if(!empty($user_billing_phone_number)) {
-							$user_phone = $user_billing_phone_number;
-						}elseif($user_billing_phone_number) {
-							$user_phone = $user_billing_phone_number;
-						}else {
-							$user_phone = '4654654';
-						}
-
-						if($get_phone_number === $user_phone || $get_phone_number === $user_phone) {							
-								if(!empty($order)) {
-									$order_data = $order->get_data(); // The Order data
-
-									require_once( CB_WC_TRACKER_PATH . '/inc/templates/progressbar.php'); 
-									require_once( CB_WC_TRACKER_PATH . '/inc/templates/result.php'); 
-								}
-						}else {
-							printf('%s Oops! Sorry! %s order is not found! please check order or phone number %s', '<h5 class="alishop_notice">', $get_order_number, '</h5>');
-						}
-					}
-				}
+			<!-- Pre Loader-->
+			<div class="alishop_result_preload_area">
+				<div class="alishop_result_preload">
+					<div></div><div></div><div></div>
+				</div>
+			</div><!--/ Pre Loader-->
 			
-
-			?>
-
+			<!-- Show All Output-->
+			<div class="alishop-traking-form-result"></div><!--/ Show All Output-->
 			
 		</div>
 	</div>

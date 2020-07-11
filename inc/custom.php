@@ -77,19 +77,19 @@ class ALI_SHOP_WC {
 	// Progress bar individual Background color for valid order
 	public static function prograssbar($status) {
 	 	if('pending' === $status) {
-	 		printf('%s', '23');
+	 		printf('%s', apply_filters( 'alishop_pending_prograss_percent', '23' ));
 	 	}
 	 	elseif('on-hold' === $status) {
-	 		printf('%s', '42');
+	 		printf('%s', apply_filters( 'alishop_on_hold_prograss_percent', '42' ));
 	 	}
 	 	elseif('processing' === $status) {
-	 		printf('%s', '61');
+	 		printf('%s', apply_filters( 'alishop_processing_prograss_percent', '61' ));
 	 	}
 	 	elseif('shipped' === $status) {
-	 		printf('%s', '80');
+	 		printf('%s', apply_filters( 'alishop_shipped_prograss_percent', '80' ));
 	 	}
 	 	elseif('completed' === $status) {
-	 		printf('%s', '100');
+	 		printf('%s', apply_filters( 'alishop_completed_prograss_percent', '100' ));
 	 	}
 	}
 
@@ -109,3 +109,18 @@ class ALI_SHOP_WC {
 	}
 }
 
+// Ajax action function
+function alishop_wc_order_tracking_result() {
+
+	if(wp_verify_nonce( $_POST['Ali_nonce'], 'alishop_nonce_data' )) {
+
+		require_once(CB_WC_TRACKER_PATH . '/inc/process.php');
+	}else {
+		echo 'Invalid User';
+	}
+
+	exit;
+}
+
+add_action('wp_ajax_alishop_wc_order_tracking_result', 'alishop_wc_order_tracking_result');
+add_action('wp_ajax_nopriv_alishop_wc_order_tracking_result', 'alishop_wc_order_tracking_result');
