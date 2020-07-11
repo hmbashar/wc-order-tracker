@@ -5,6 +5,13 @@
 .alishop-tracking-title h2 {
     font-size: 20px;
 }
+.alishop-tracking {
+    padding: 10px;
+}
+.alishop-tracking-from {
+    padding: 0 10px;
+}
+
 
 }
 
@@ -54,8 +61,18 @@ table tr td:first-child {
     animation: alishop_left_to_right 2s linear infinite;
 }
 
+.alishop-tracking-form-area {
+    display: inline-block;
+    text-align: center;
+}
 
-
+.alishop-tracking-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.alishop-tracking-from form input[type="text"] {
+    width: 100%;
+}
 
 }
 
@@ -77,6 +94,17 @@ table tr td:first-child {
 }
 .alishop_shipping.active {
     animation: alishop_left_to_right 2s linear infinite;
+}
+.alishop-tracking-form-area {
+    display: inline-block;
+    text-align: center;
+}
+.alishop-tracking-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.alishop-tracking-from form input[type="text"] {
+    width: 100%;
 }
 
 }
