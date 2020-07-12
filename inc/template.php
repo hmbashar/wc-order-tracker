@@ -3,14 +3,13 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 	get_header();
 
-	
 ?>
 
 
 	<div class="alishop-tracking-container">
 		<div class="alishop-tracking">
 			<div class="alishop-tracking-title">
-				<h2><?php do_action( 'alishop_order_tracking_heading' );?></h2>
+				<h2><?php apply_filters( 'alishop_order_tracking_heading', __('Order Tracker', 'cbwet') );?></h2>
 			</div>
 			
 			<!--Tracking Form -->
@@ -18,16 +17,16 @@ if ( !defined( 'ABSPATH' ) ) exit;
 				<form method="POST">
 					<div class="alishop-tracking-form-area">
 						<div class="alishop-tracking-form-field">
-							<label for="order_number"><?php do_action('alishop_field_text_order_number');?></label>
+							<label for="order_number"><?php apply_filters('alishop_field_text_order_number', __('Order Number', 'cbwet'));?></label>
 							<input type="text" id="order_number" name="order_number" placeholder="Order Number...">
 						</div>
 						<div class="alishop-tracking-form-field">
-							<label for="phone"><?php do_action('alishop_field_text_phone_number');?></label>
-							<input type="text" id="phone" name="phone" placeholder="Phone Number..."> 
+							<label for="phone"><?php apply_filters('alishop_field_text_phone_number', __('Phone Number', 'cbwet'));?></label>
+							<input type="text" id="phone" name="phone_number" placeholder="Phone Number..."> 
 						</div>
 						<div class="alishop-tracking-form-field alishop-traking-form-submit">
 							<?php wp_nonce_field('alishop_nonce_data'); ?>							
-							<input type="submit" value="<?php do_action('alishop_submit_button_text');?>">
+							<input type="submit" value="<?php apply_filters('alishop_submit_button_text', __('Track Order', 'cbwet'));?>">
 						</div>	
 					</div>					
 				</form>

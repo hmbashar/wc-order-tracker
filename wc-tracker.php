@@ -1,8 +1,8 @@
 <?php
 /*
-	Plugin Name: CB Woocommerce Product Tracker
-	Plugin URI: https://wordpress.org/plugins/cb-wc-tracker
-	Description: Check domain name availability for all Top Level Domains using shortcode or widget with search.
+	Plugin Name: Ali Shop WC Order Tracker
+	Plugin URI: https://wordpress.org/plugins/alishop-wc-order-tracker
+	Description: your custom can track his/her order on your website, woocommerce order tracking system with ajax
 	Author: Md Abul Bashar
 	Version: 1.0
 	Author URI: https://facebook.com/hmbashar

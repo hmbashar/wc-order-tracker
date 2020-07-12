@@ -5,7 +5,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 function plugin_tamplate_add_page_attribute_dropdown( $post_templates, $wp_theme, $post, $post_type ) {
 
-    $post_templates['template.php'] = __('CB WC Tracker');
+    $post_templates['template.php'] = __('Alishop WC Tracker');
 
     return $post_templates;
 }
@@ -107,6 +107,21 @@ class ALI_SHOP_WC {
 		}
 
 	}
+
+	// check if order number exists
+	public static function order_number_exists($order_number)
+		{   
+		    if(get_post_type($order_number) == "shop_order")
+		    {
+		        return true;
+		    }
+		    else
+		    {
+		       return false;
+		    }
+		}
+
+
 }
 
 // Ajax action function
@@ -124,3 +139,4 @@ function alishop_wc_order_tracking_result() {
 
 add_action('wp_ajax_alishop_wc_order_tracking_result', 'alishop_wc_order_tracking_result');
 add_action('wp_ajax_nopriv_alishop_wc_order_tracking_result', 'alishop_wc_order_tracking_result');
+

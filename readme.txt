@@ -1,73 +1,72 @@
-=== CB Domain Checker with Ajax ===
+=== Ali Shop WC Order Tracker ===
 Contributors: hmbashar
-Tags: domain checking, domain find, domain search, domain name register
-Requires at least: 4.6
-Tested up to: 5.4
-Stable tag: 1.0
+Tags: woocommerce order tracker, order tracker, alishop order tracker, tracker, shipping, delivery tracker
+Requires at least: 4.7
+Tested up to: 5.4.2
+Stable tag: 4.3
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-
+Hi, You're using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [alishop-wc-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
 == Description ==
 
-You’re Welcome to <a href="https://github.com/hmbashar/cb-domain-checker">Github Repo</a> for features/pull request
+Hi, You're using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [alishop-wc-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
-You can use the plugin for domain name search on your WordPress website using the shortcode [cb-domain-checker]
-
-## Pro Features
-You can show your domain extension with price per year using the [cb-domain-price] shortcode inside the main shortcode [cb-domain-checker]
-
-
-=== example ===
-``[cb-domain-checker][cb-domain-price][/cb-domain-checker]``
-
-
-=== attributes are supported with the domain price shortcode ===
-* name
-* currency
-* price
-
-=== example ===
-``[cb-domain-price name=".com" currency="$" price="10.5"]``
-
-=== Full shortcode like this ===
-``[cb-domain-checker][cb-domain-price name=".com" currency="tk" price="950"][cb-domain-price name=".net" currency="tk" price="1050"][cb-domain-price name=".org" currency="tk" price="1100"][cb-domain-price name=".com.bd" currency="tk" price="1250"][/cb-domain-checker]``
-
-
-
-== Installation ==
-
-This section describes how to install the plugin and get it working.
-
-e.g.
-
-1. Upload the plugin files to the `/wp-content/plugins/plugin-name` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
-3. Use the Settings->Plugin Name screen to configure the plugin
-4. use the shortcode [cb-domain-checker]
 
 
 == Frequently Asked Questions ==
 
-= How to use the plugin? =
+= A question that someone might have =
 
-Just install the plugin then go to settings>CB Domain Check setting
+An answer to that question.
 
-= I've Installed the plugin the doesn't work =
+= What about foo bar? =
 
-Must be you need to installed and properly with configure
+Answer to foo bar dilemma.
 
 == Screenshots ==
 
+1. Cancelled ordered
+2. Order Shipped
+2. Order Processing
+2. Order On-Hold
 
 == Changelog ==
 
 = 1.0 =
-* Just release new version.
+* Release new version.
+
 
 
 == Upgrade Notice ==
 
 = 1.0 =
+Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+
+
+== A brief Markdown Example ==
+
+Ordered list:
+
+1. Some feature
+1. Another feature
+1. Something else about the plugin
+
+Unordered list:
+
+* something
+* something else
+* third thing
+
+Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
+Titles are optional, naturally.
+
+[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
+            "Markdown is what the parser uses to process much of the readme file"
+
+Markdown uses email style notation for blockquotes and I've been told:
+> Asterisks for *emphasis*. Double it up  for **strong**.
+
+`<?php code(); // goes in backticks ?>`
