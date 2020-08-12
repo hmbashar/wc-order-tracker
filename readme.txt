@@ -1,6 +1,6 @@
-=== Ali Shop WC Order Tracker ===
+=== Order Tracker for WooCommerce ===
 Contributors: hmbashar
-Tags: woocommerce order tracker, order tracker, alishop order tracker, tracker, shipping, delivery tracker
+Tags: woocommerce order tracker, order tracker, order tracker, tracker, shipping, delivery tracker
 Requires at least: 4.7
 Tested up to: 5.4.2
 Stable tag: 4.3
