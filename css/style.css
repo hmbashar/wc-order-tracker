@@ -1,27 +1,27 @@
 
-.alishop-tracking-container table {
+.cbwct-tracking-container table {
     width: 100%;
 }
 
-.alishop-tracking-container tr {
+.cbwct-tracking-container tr {
     vertical-align: middle;
 }
 
-.alishop-tracking-container table tr td:first-child{font-size: 16px;color: #404040;vertical-align: middle;font-family: 'Lato',Helvetica, sans-serif !important;font-weight: 400;}
+.cbwct-tracking-container table tr td:first-child{font-size: 16px;color: #404040;vertical-align: middle;font-family: 'Lato',Helvetica, sans-serif !important;font-weight: 400;}
 
 
-.alishop-tracking-container td {
+.cbwct-tracking-container td {
     padding: 9px;
 }
 
-.alishop-tracking-container tr:nth-child(odd) {
+.cbwct-tracking-container tr:nth-child(odd) {
   background-color: #dddddd;
 }
-.alishop-tracking-container {
+.cbwct-tracking-container {
     margin-top: 50px;
 }
-.alishop-tracking{max-width: 1140px; margin: 30px auto;}
-.alishop-tracking-porgressbar {
+.cbwct-tracking{max-width: 1140px; margin: 30px auto;}
+.cbwct-tracking-porgressbar {
     border-style: solid;
     border-width: 1px;
     border: rgb(136,136,136);
@@ -35,7 +35,7 @@
     height: 75px;
 }
 
-.alishop-tracking-progress {
+.cbwct-tracking-progress {
         background: #0cc5b7; /* Old browsers */
     background: -moz-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Chrome10-25,Safari5.1-6 */
@@ -51,14 +51,14 @@
         border-radius: 3px;
 }
 
-.alishop-tracking-progress {}
-.alishop-tracking-from form input[type="text"] {
+.cbwct-tracking-progress {}
+.cbwct-tracking-from form input[type="text"] {
     padding: 6px;
     border: 1px solid #0a212d;
     border-radius: 2px;
     margin-right: 10px;
 }
-.alishop-tracking-from form input[type="submit"] {
+.cbwct-tracking-from form input[type="submit"] {
     padding: 8px 20px;
     text-align: center;
     text-transform: uppercase;
@@ -80,24 +80,24 @@ background: -webkit-linear-gradient(-45deg, #ff934b 0%,#ff5e62 100%);
 background: linear-gradient(135deg, #ff934b 0%,#ff5e62 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', endColorstr='#ff5e62',GradientType=1 );
 }
-.alishop-tracking-from form label {
+.cbwct-tracking-from form label {
     font-weight: 800;
     padding-right: 5px;
     font-family: 'Lato', sans-serif;
     color: #666;
 }
-.alishop-tracking-from {
+.cbwct-tracking-from {
     margin-top: 40px;
     margin-bottom: 0px;
 }
-.alishop-tracking-title h2 {
+.cbwct-tracking-title h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #666;
 }
 
-.alishop_wc_traking_steps {
+.cbwct_wc_traking_steps {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -107,7 +107,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
   right: 10px;
   margin: 0 auto;
 }
-.alishop-wc-traking-round {
+.cbwct-wc-traking-round {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -117,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
   margin: 0 auto;
 }
 
-.alishop-wc-traking-round.active:before {
+.cbwct-wc-traking-round.active:before {
     content:'';
   width: 0;
   height: 0;
@@ -136,7 +136,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
     position: absolute;
 }
 
-.alishop-wc-traking-round.active:after{
+.cbwct-wc-traking-round.active:after{
  content: 'Order';
 display: inline-block;
 position: absolute;
@@ -154,40 +154,40 @@ font-size: 14px;
 text-align: center;
 width: 125px;
 }
-.alishop-wc-traking-round.active.ali-wc-payment:after{
+.cbwct-wc-traking-round.active.ali-wc-payment:after{
     content:'Payment Pending';
 }
 
-.alishop-wc-traking-round.active.ali-wc-hold:after{
+.cbwct-wc-traking-round.active.ali-wc-hold:after{
     content:'On Hold';
 }
-.alishop-wc-traking-round.active.ali-wc-processing:after{
+.cbwct-wc-traking-round.active.ali-wc-processing:after{
     content:'Processing';
 }
-.alishop-wc-traking-round.active.ali-wc-shipping:after{
+.cbwct-wc-traking-round.active.ali-wc-shipping:after{
     content:'Shipped';
 }
-.alishop-wc-traking-round.active.ali-wc-delivered:after{
+.cbwct-wc-traking-round.active.ali-wc-delivered:after{
     content:'Delivered';
 }
 
-.alishop_wc_traking_step p {color:white;}
-.alishop-wc-traking-img img{width: 30px;margin-bottom: 12px;}
+.cbwct_wc_traking_step p {color:white;}
+.cbwct-wc-traking-img img{width: 30px;margin-bottom: 12px;}
 
-.alishop_shipping{position: absolute;
+.cbwct_shipping{position: absolute;
 left: 0;}
-.alishop_shipping.active{
-  animation: alishop_left_to_right 5s linear infinite; 
+.cbwct_shipping.active{
+  animation: cbwct_left_to_right 5s linear infinite; 
 }
-.alishop_wc_traking_step {
+.cbwct_wc_traking_step {
   text-align: center;
   position: relative;
 }
-.alishop-wc-traking-img {
+.cbwct-wc-traking-img {
   margin: 0 auto;
 }
 
-.alishop-wc-traking-round.active{        background: #0cc5b7; /* Old browsers */
+.cbwct-wc-traking-round.active{        background: #0cc5b7; /* Old browsers */
     background: -moz-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* FF3.6-15 */
     background: -webkit-linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -197,10 +197,10 @@ left: 0;}
     border-color:#fff;
 }
 
-.alishop_notice{color:red;}
-.alishop_progress{animation: alishop_wc_circle 6s linear infinite;}
+.cbwct_notice{color:red;}
+.cbwct_progress{animation: cbwct_wc_circle 6s linear infinite;}
 
-.alishop_wc_order_cancelled {
+.cbwct_wc_order_cancelled {
   font-size: 20px;
 display: flex;
 justify-content: center;
@@ -208,37 +208,37 @@ align-items: center;
 height: 100%;
 width:100% !important;
 }
-.alishop-traking-form-result {
+.cbwct-traking-form-result {
     margin-top: 20px;
 }
-.alishop-tracking-form-area{display: flex;}
-.alishop-tracking-form-field{}
-.alishop-traking-form-submit{}
+.cbwct-tracking-form-area{display: flex;}
+.cbwct-tracking-form-field{}
+.cbwct-traking-form-submit{}
 
 
-.alishop_wc_order_tracker_loader {
+.cbwct_wc_order_tracker_loader {
   display: inline-block;
   position: relative;
   width: 80px;
   height: 80px;
 }
-.alishop_wc_order_tracker_loader div {
+.cbwct_wc_order_tracker_loader div {
   display: inline-block;
   position: absolute;
   left: 8px;
   width: 16px;
   background: #ff5e62 ;
-  animation: alishop_loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: cbwct_loader 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
-.alishop_wc_order_tracker_loader div:nth-child(1) {
+.cbwct_wc_order_tracker_loader div:nth-child(1) {
   left: 8px;
   animation-delay: -0.24s;
 }
-.alishop_wc_order_tracker_loader div:nth-child(2) {
+.cbwct_wc_order_tracker_loader div:nth-child(2) {
   left: 32px;
   animation-delay: -0.12s;
 }
-.alishop_wc_order_tracker_loader div:nth-child(3) {
+.cbwct_wc_order_tracker_loader div:nth-child(3) {
   left: 56px;
   animation-delay: 0;
 }

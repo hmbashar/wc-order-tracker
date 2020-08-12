@@ -5,9 +5,9 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 ?>
 
-	<!-- Alishop Tracking Progress bar-->
-	<div class="alishop-tracking-porgressbar">
-		<div class="alishop-tracking-progress <?php ALI_SHOP_WC::order_class($order->get_status());?>" style="width:<?php echo ALI_SHOP_WC::prograssbar($order->get_status()); ?>%;">
+	<!-- cbwct Tracking Progress bar-->
+	<div class="cbwct-tracking-porgressbar">
+		<div class="cbwct-tracking-progress <?php ALI_SHOP_WC::order_class($order->get_status());?>" style="width:<?php echo ALI_SHOP_WC::prograssbar($order->get_status()); ?>%;">
 
 			<?php ALI_SHOP_WC::order_text($order->get_status());?>
 				
@@ -19,4 +19,4 @@ if ( !defined( 'ABSPATH' ) ) exit;
 		?>
 	
 
-	</div><!--/ Alishop Tracking Progress bar-->
+	</div><!--/ cbwct Tracking Progress bar-->

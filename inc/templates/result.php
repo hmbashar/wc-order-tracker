@@ -4,7 +4,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 
 ?>
-<div class="alishop-tracking-list">
+<div class="cbwct-tracking-list">
 	<table>
 		<tr>
 			<td>Order Number:</td>
@@ -32,7 +32,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 							foreach ($order->get_items() as $item_key => $item ):
 								$i++;
 						?>
-							<li><a href="<?php the_permalink($item->get_product_id());?>"> <?php echo $i. '. '; echo esc_html(wp_trim_words($item->get_name(), apply_filters('alishop_product_title_trim_words', 8), NULL));?></a></li>
+							<li><a href="<?php the_permalink($item->get_product_id());?>"> <?php echo $i. '. '; echo esc_html(wp_trim_words($item->get_name(), apply_filters('cbwct_product_title_trim_words', 8), NULL));?></a></li>
 						<?php endforeach; ?>
 					</ul>
 				</td>	

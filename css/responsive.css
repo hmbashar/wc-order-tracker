@@ -2,13 +2,13 @@
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-.alishop-tracking-title h2 {
+.cbwct-tracking-title h2 {
     font-size: 20px;
 }
-.alishop-tracking {
+.cbwct-tracking {
     padding: 10px;
 }
-.alishop-tracking-from {
+.cbwct-tracking-from {
     padding: 0 10px;
 }
 
@@ -21,10 +21,10 @@
 
 @media only screen and (max-width: 767px) {
 
-.alishop-tracking-container {
+.cbwct-tracking-container {
     padding: 0px 5px;
 }
-.alishop-tracking {
+.cbwct-tracking {
     width: 100%;
     margin: 0 auto;
 }
@@ -32,45 +32,45 @@ table tr td:first-child {
     min-width: 150px !important;
     line-height: 30px;
 }
-.alishop-tracking-container {
+.cbwct-tracking-container {
     margin-top: 18px;
 }
-.alishop-tracking-title {
+.cbwct-tracking-title {
     text-align: center;
 }
-.alishop-tracking-from form label {
+.cbwct-tracking-from form label {
     padding-right: 10px;
     font-weight: 400;
 }
-.alishop-tracking-from {
+.cbwct-tracking-from {
     margin-top: 40px;
     text-align: center;
     margin-bottom: 30px;
 }
-.alishop-tracking-title h2 {
+.cbwct-tracking-title h2 {
     font-size: 16px;
 }
 
-@keyframes alishop_left_to_right {
+@keyframes cbwct_left_to_right {
   100% {
     transform: translateX(60px);
   }
 }
 
-.alishop_shipping.active {
-    animation: alishop_left_to_right 2s linear infinite;
+.cbwct_shipping.active {
+    animation: cbwct_left_to_right 2s linear infinite;
 }
 
-.alishop-tracking-form-area {
+.cbwct-tracking-form-area {
     display: inline-block;
     text-align: center;
 }
 
-.alishop-tracking-form-field {
+.cbwct-tracking-form-field {
     width: 100%;
     margin-bottom: 10px;
 }
-.alishop-tracking-from form input[type="text"] {
+.cbwct-tracking-from form input[type="text"] {
     width: 100%;
 }
 
@@ -82,28 +82,28 @@ table tr td:first-child {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-.alishop-tracking-title h2 {
+.cbwct-tracking-title h2 {
     font-size: 18px;
 }
 
-@keyframes alishop_left_to_right {
+@keyframes cbwct_left_to_right {
 
   100% {
     transform: translateX(65px);
   }
 }
-.alishop_shipping.active {
-    animation: alishop_left_to_right 2s linear infinite;
+.cbwct_shipping.active {
+    animation: cbwct_left_to_right 2s linear infinite;
 }
-.alishop-tracking-form-area {
+.cbwct-tracking-form-area {
     display: inline-block;
     text-align: center;
 }
-.alishop-tracking-form-field {
+.cbwct-tracking-form-field {
     width: 100%;
     margin-bottom: 10px;
 }
-.alishop-tracking-from form input[type="text"] {
+.cbwct-tracking-from form input[type="text"] {
     width: 100%;
 }
 

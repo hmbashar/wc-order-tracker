@@ -3,7 +3,7 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 
 // Register Shortcode
-function alishop_wc_shortcode($attrs, $content = NULL) {
+function cbwct_wc_shortcode($attrs, $content = NULL) {
 	ob_start();
 	extract(shortcode_atts(array(
 
@@ -11,8 +11,8 @@ function alishop_wc_shortcode($attrs, $content = NULL) {
 
 	), $attrs));
 
-		require_once( CB_WC_TRACKER_PATH . '/inc/template.php'); 
+		require_once( CBWCT_TRACKER_PATH . '/inc/template.php'); 
 
 	return ob_get_clean();
 }
-add_shortcode('alishop-wc-tracker', 'alishop_wc_shortcode');
+add_shortcode('cbwct-order-tracker', 'cbwct_wc_shortcode');

@@ -1,5 +1,5 @@
 
-@keyframes alishop_wc_circle{
+@keyframes cbwct_wc_circle{
   0%{
       transform: rotate(0deg) 
                 translate(0) 
@@ -31,7 +31,7 @@
 
 /* Standard syntax */
 
-@keyframes alishop_left_to_right {
+@keyframes cbwct_left_to_right {
  
 
   100% {
@@ -53,7 +53,7 @@
 
 
 
-@keyframes alishop_loader {
+@keyframes cbwct_loader {
   0% {
     top: 8px;
     height: 64px;

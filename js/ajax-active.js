@@ -1,25 +1,25 @@
 (function($) {
 
-	$('.alishop-tracking-from form').on('submit', function() {
-		var OrderNumber = $('.alishop-tracking-form-field input#order_number').val();
-		var PhoneNumber = $('.alishop-tracking-form-field input#phone').val();
-		var AlishopNonce = $('.alishop-tracking-form-field input#_wpnonce').val();
+	$('.cbwct-tracking-from form').on('submit', function() {
+		var OrderNumber = $('.cbwct-tracking-form-field input#order_number').val();
+		var PhoneNumber = $('.cbwct-tracking-form-field input#phone').val();
+		var cbwctNonce = $('.cbwct-tracking-form-field input#_wpnonce').val();
 
 		$.ajax({
 			type: 'post',
-			url:alishop_tracker.ajaxurl,
+			url:cbwct_tracker.ajaxurl,
 			data: {
-				action:'alishop_wc_order_tracking_result',
+				action:'cbwct_wc_order_tracking_result',
 				order_number:OrderNumber,
 				phone_number:PhoneNumber,
-				Ali_nonce:AlishopNonce,
+				Ali_nonce:cbwctNonce,
 			},
 			beforeSend:function() {
-				$('.alishop_result_preload').addClass('alishop_wc_order_tracker_loader');
+				$('.cbwct_result_preload').addClass('cbwct_wc_order_tracker_loader');
 			},
 			success: function(data) {
-				$('.alishop-traking-form-result').html(data);
-				$('.alishop_result_preload').removeClass('alishop_wc_order_tracker_loader');				
+				$('.cbwct-traking-form-result').html(data);
+				$('.cbwct_result_preload').removeClass('cbwct_wc_order_tracker_loader');				
 			}
 		});
 
