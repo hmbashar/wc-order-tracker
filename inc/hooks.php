@@ -2,6 +2,10 @@
  // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+if(!class_exists('CBWCT_ORDER_TRACKER')) {
+	return;
+}
+
 // Tracking Heading
 function cbwct_order_tracking_heading(){
 	echo __('Order Tracker', 'cbwet');
@@ -43,11 +47,6 @@ add_filter('cbwct_product_title_trim_words', 'cbwct_product_title_trim_words');
 
 
 // set progress bar percent
-//cbwct_pending_prograss_percent
-//cbwct_on_hold_prograss_percent
-//cbwct_processing_prograss_percent
-//cbwct_shipped_prograss_percent
-//cbwct_completed_prograss_percent
 function cbwct_shipped_prograss_percent() {
 	return 80;
 }

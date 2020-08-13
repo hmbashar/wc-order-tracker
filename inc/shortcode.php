@@ -1,6 +1,9 @@
 <?php 
 // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
+if(!class_exists('CBWCT_ORDER_TRACKER')) {
+	return;
+}
 
 // Register Shortcode
 function cbwct_wc_shortcode($attrs, $content = NULL) {

@@ -1,8 +1,12 @@
 <?php 
  // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
-	get_header();
+	
+	if(!class_exists('CBWCT_ORDER_TRACKER')) {
+		return;
+	}
 
+	get_header();
 ?>
 
 

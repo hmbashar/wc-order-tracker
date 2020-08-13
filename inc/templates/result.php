@@ -2,6 +2,9 @@
  // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+if(!class_exists('CBWCT_ORDER_TRACKER')) {
+	return;
+}
 
 ?>
 <div class="cbwct-tracking-list">
@@ -68,7 +71,7 @@ if ( !defined( 'ABSPATH' ) ) exit;
 		</tr>
 		<tr>
 			<td>Payment Method</td>
-			<td><?php echo esc_html(ALI_SHOP_WC::selected_gateway_name($order->get_payment_method())); ?></td>
+			<td><?php echo esc_html(CBWCT_ORDER_TRACKER::selected_gateway_name($order->get_payment_method())); ?></td>
 		</tr>
 		<tr>
 			<td>Total Amount</td>

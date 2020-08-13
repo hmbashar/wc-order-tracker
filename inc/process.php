@@ -2,6 +2,10 @@
 	 // Don't call the file directly
 if ( !defined( 'ABSPATH' ) ) exit;
 
+if(!class_exists('CBWCT_ORDER_TRACKER')) {
+	return;
+}
+
 // set variable for getting value from input field
 $get_order_number = sanitize_text_field($_POST['order_number']);
 $get_phone_number = sanitize_text_field($_POST['phone_number']);
@@ -15,7 +19,7 @@ if(empty($get_order_number) || empty($get_phone_number)) { // search field empty
 		$order = NULL;
 
 	}else {
-		if(ALI_SHOP_WC::order_number_exists($get_order_number) == false) {
+		if(CBWCT_ORDER_TRACKER::order_number_exists($get_order_number) == false) {
 			 echo apply_filters( 'cbwct_order_is_not_found', 'order is not found!', $get_order_number );
 		}else {
 			$order = wc_get_order( $get_order_number ); // set order number

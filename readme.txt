@@ -8,23 +8,40 @@ Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Hi, You're using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [alishop-wc-tracker] shortcode, anytime anywhere, and it's also working with ajax.
+Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
 == Description ==
 
-Hi, You're using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [alishop-wc-tracker] shortcode, anytime anywhere, and it's also working with ajax.
+
+Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
 
+= Filter Hook =
+
+* cbwct_pending_prograss_percent
+* cbwct_on_hold_prograss_percent
+* cbwct_processing_prograss_percent
+* cbwct_shipped_prograss_percent
+* cbwct_completed_prograss_percent
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= How can i use the plugin? =
 
-An answer to that question.
+You can use the plugin by template or shortcode, you need to make a page then select "Order Tracker for WooCommerce" template from your page attribute option.
 
-= What about foo bar? =
+= Do you have shortcode for using the plugin anywhere? =
 
-Answer to foo bar dilemma.
+Yes, You've shortcode for the plugin, you can use the shortcode [cbwct-order-tracker] for showing the search form with search result anywhere.
+
+= Do you support hook? =
+Yes, You've some of  hooks for developer
+
+* cbwct_pending_prograss_percent
+* cbwct_on_hold_prograss_percent
+* cbwct_processing_prograss_percent
+* cbwct_shipped_prograss_percent
+* cbwct_completed_prograss_percent
 
 == Screenshots ==
 
@@ -43,30 +60,4 @@ Answer to foo bar dilemma.
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](https://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: https://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+Upgrade notices describe the reason a user should upgrade.  
