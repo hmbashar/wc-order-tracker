@@ -14,7 +14,10 @@ function cbwct_wc_shortcode($attrs, $content = NULL) {
 
 	), $attrs));
 
-		require_once( CBWCT_TRACKER_PATH . '/inc/template.php'); 
+		// get template markup
+		require_once( CBWCT_TRACKER_PATH . '/inc/template-markup.php'); 
+
+	
 
 	return ob_get_clean();
 }

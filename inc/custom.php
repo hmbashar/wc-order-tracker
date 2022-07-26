@@ -166,3 +166,83 @@ function cbwct_tracker_load_tamplate( $template ) {
 
 add_filter( 'template_include', 'cbwct_tracker_load_tamplate' );
 
+
+
+
+// Register a custom order status
+add_action('init', 'cbwct_register_custom_order_statuses');
+function cbwct_register_custom_order_statuses() {
+    register_post_status('wc-shipped ', array(
+        'label' => __( 'Shipped', 'woocommerce' ),
+        'public' => true,
+        'exclude_from_search' => false,
+        'show_in_admin_all_list' => true,
+        'show_in_admin_status_list' => true,
+        'label_count' => _n_noop('Shipped <span class="count">(%s)</span>', 'Shipped <span class="count">(%s)</span>')
+    ));
+}
+
+
+// Add a custom order status to list of WC Order statuses
+add_filter('wc_order_statuses', 'cbwct_add_custom_order_statuses');
+function cbwct_add_custom_order_statuses($order_statuses) {
+    $new_order_statuses = array();
+
+    // add new order status before processing
+    foreach ($order_statuses as $key => $status) {
+        $new_order_statuses[$key] = $status;
+        if ('wc-processing' === $key) {
+            $new_order_statuses['wc-shipped'] = __('Shipped', 'woocommerce' );
+        }
+    }
+    return $new_order_statuses;
+}
+
+
+// Adding custom status 'awaiting-delivery' to admin order list bulk dropdown
+add_filter( 'bulk_actions-edit-shop_order', 'cbwct_custom_dropdown_bulk_actions_shop_order', 50, 1 );
+function cbwct_custom_dropdown_bulk_actions_shop_order( $actions ) {
+    $new_actions = array();
+
+    // add new order status before processing
+    foreach ($actions as $key => $action) {
+        if ('mark_processing' === $key)
+            $new_actions['mark_shipped'] = __( 'Change status to shipped', 'woocommerce' );
+
+        $new_actions[$key] = $action;
+    }
+    return $new_actions;
+}
+
+// Add a custom order status action button (for orders with "processing" status)
+add_filter( 'woocommerce_admin_order_actions', 'cbwct_add_custom_order_status_actions_button', 100, 2 );
+function cbwct_add_custom_order_status_actions_button( $actions, $order ) {
+    // Display the button for all orders that have a 'processing', 'pending' or 'on-hold' status
+    if ( $order->has_status( array( 'on-hold', 'processing', 'pending' ) ) ) {
+
+        // The key slug defined for your action button
+        $action_slug = 'shipped';
+
+        // Set the action button
+        $actions[$action_slug] = array(
+            'url'       => wp_nonce_url( admin_url( 'admin-ajax.php?action=woocommerce_mark_order_status&status='.$action_slug.'&order_id='.$order->get_id() ), 'woocommerce-mark-order-status' ),
+            'name'      => __( 'Shipped', 'woocommerce' ),
+            'action'    => $action_slug,
+        );
+    }
+    return $actions;
+}
+
+// Set styling for custom order status action button icon and List icon
+add_action( 'admin_head', 'cbwct_add_custom_order_status_actions_button_css' );
+function cbwct_add_custom_order_status_actions_button_css() {
+    $action_slug = "shipped"; // The key slug defined for your action button
+    ?>
+    <style>
+        .wc-action-button-<?php echo $action_slug; ?>::after {
+            font-family: woocommerce !important; content: "\e029" !important;
+        }
+    </style>
+    <?php
+}
+

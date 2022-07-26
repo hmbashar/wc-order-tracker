@@ -2,19 +2,20 @@
 Contributors: hmbashar
 Tags: woocommerce order tracker, order tracker, order tracker, tracker, shipping, delivery tracker
 Requires at least: 4.7
-Tested up to: 5.4.2
-Stable tag: 4.3
+Tested up to: 6.0.1
+Stable tag: 1.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
+Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
 == Description ==
 
 
-Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very every easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
+Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
 
+https://www.youtube.com/watch?v=PojzV-wmLpw
 
 = Filter Hook =
 
@@ -43,6 +44,14 @@ Yes, You've some of  hooks for developer
 * cbwct_shipped_prograss_percent
 * cbwct_completed_prograss_percent
 
+= Order and mobile number correct but still showing  doesn't found? =
+make sure your customer has used the exact same number for the tracking which that number input when placing the order. like If your customer inputs his/her phone number with country code when placing an order then his/her needs the exact same number with the country code. 
+
+If your customer input this format +88 (country code) 123456789 (mobile number) full number like +88123456789 then his/her need to exact same like +88123456789 for the tracking. 
+
+or if he/she inputs without country code and only mobile number like this 123456789 then his/her need to input without country code like this 123456789 number for tracking.
+
+
 == Screenshots ==
 
 1. Cancelled ordered
@@ -51,6 +60,12 @@ Yes, You've some of  hooks for developer
 2. Order On-Hold
 
 == Changelog ==
+
+= 1.1 =
+* Add Shipped in status
+* shortcode error fix
+* Few changes.
+
 
 = 1.0 =
 * Release new version.

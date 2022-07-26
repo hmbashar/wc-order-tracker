@@ -175,9 +175,10 @@ width: 125px;
 .cbwct-wc-traking-img img{width: 30px;margin-bottom: 12px;}
 
 .cbwct_shipping{position: absolute;
-left: 0;}
+left: 0;top:0}
 .cbwct_shipping.active{
   animation: cbwct_left_to_right 5s linear infinite; 
+ 
 }
 .cbwct_wc_traking_step {
   text-align: center;
