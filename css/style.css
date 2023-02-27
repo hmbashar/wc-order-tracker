@@ -57,6 +57,7 @@
     border: 1px solid #0a212d;
     border-radius: 3px;
     margin-right: 10px;
+    width: 250px;
 }
 .cbwct-tracking-from form input[type="submit"] {
     padding: 10px 20px;
@@ -222,7 +223,8 @@ width:100% !important;
     justify-content: center;
     flex-direction: row;
     align-items: flex-end;}
-.cbwct-tracking-form-field{}
+.cbwct-tracking-form-field{display: flex;
+flex-direction: column;}
 .cbwct-traking-form-submit{}
 
 
