@@ -53,13 +53,13 @@
 
 .cbwct-tracking-progress {}
 .cbwct-tracking-from form input[type="text"] {
-    padding: 6px;
+    padding: 10px;
     border: 1px solid #0a212d;
-    border-radius: 2px;
+    border-radius: 3px;
     margin-right: 10px;
 }
 .cbwct-tracking-from form input[type="submit"] {
-    padding: 8px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
     border-radius: 4px;
@@ -85,6 +85,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff934b', end
     padding-right: 5px;
     font-family: 'Lato', sans-serif;
     color: #666;
+    font-size: 14px;
 }
 .cbwct-tracking-from {
     margin-top: 40px;
@@ -198,7 +199,11 @@ left: 0;top:0}
     border-color:#fff;
 }
 
-.cbwct_notice{color:red;}
+.cbwct_notice{color: red;
+font-size: 15px;
+font-weight: 600;
+display: inline-block;
+border-radius: 3px;}
 .cbwct_progress{animation: cbwct_wc_circle 6s linear infinite;}
 
 .cbwct_wc_order_cancelled {
@@ -212,7 +217,11 @@ width:100% !important;
 .cbwct-traking-form-result {
     margin-top: 20px;
 }
-.cbwct-tracking-form-area{display: flex;}
+.cbwct-tracking-form-area{display: flex;    
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;}
 .cbwct-tracking-form-field{}
 .cbwct-traking-form-submit{}
 

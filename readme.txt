@@ -61,6 +61,9 @@ or if he/she inputs without country code and only mobile number like this 123456
 
 == Changelog ==
 
+= 1.2 =
+* fix search form broken issue
+
 = 1.1 =
 * Add Shipped in status
 * shortcode error fix

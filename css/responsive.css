@@ -11,7 +11,14 @@
 .cbwct-tracking-from {
     padding: 0 10px;
 }
-
+.cbwct-tracking-from form input[type="text"] {
+   flex-basis: 100%;
+}
+.cbwct-tracking-form-field {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
 
 }
 
@@ -62,16 +69,20 @@ table tr td:first-child {
 }
 
 .cbwct-tracking-form-area {
-    display: inline-block;
-    text-align: center;
+   flex-direction: column;
+       justify-content: center;
+       align-items: center;
 }
 
 .cbwct-tracking-form-field {
-    width: 100%;
-    margin-bottom: 10px;
+  flex-basis: 100%;
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
 }
 .cbwct-tracking-from form input[type="text"] {
-    width: 100%;
+    flex-basis: 100%;
+     margin-right: 0;
 }
 
 }
@@ -95,17 +106,17 @@ table tr td:first-child {
 .cbwct_shipping.active {
     animation: cbwct_left_to_right 2s linear infinite;
 }
-.cbwct-tracking-form-area {
-    display: inline-block;
+.cbwct-tracking-form-area {   
     text-align: center;
 }
 .cbwct-tracking-form-field {
-    width: 100%;
+    flex-basis: 100%;
     margin-bottom: 10px;
 }
 .cbwct-tracking-from form input[type="text"] {
-    width: 100%;
+    flex-basis: 100%;    
 }
+
 
 }
 
