@@ -2,8 +2,8 @@
 Contributors: hmbashar
 Tags: woocommerce order tracker, order tracker, order tracker, tracker, shipping, delivery tracker
 Requires at least: 4.7
-Tested up to: 6.0.1
-Stable tag: 1.1
+Tested up to: 6.1.1
+Stable tag: 1.2
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,10 @@ Hi, Are you using WooCommerce? you can use the plugin for your customers can tra
 
 
 Hi, Are you using WooCommerce? you can use the plugin for your customers can track his/her order status on your website, it's a woocommerce order tracking system with ajax, you can use it very easy way, like make a page template or using the [cbwct-order-tracker] shortcode, anytime anywhere, and it's also working with ajax.
+
+Welcome for contribution on <a href="https://github.com/hmbashar/wc-order-tracker">github</a>
+
+https://www.youtube.com/watch?v=FfE7GuqwlbA
 
 https://www.youtube.com/watch?v=PojzV-wmLpw
 
@@ -61,7 +65,7 @@ or if he/she inputs without country code and only mobile number like this 123456
 
 == Changelog ==
 
-= 1.2 =
+= 1.1 =
 * fix search form broken issue
 
 = 1.1 =
