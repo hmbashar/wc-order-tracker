@@ -10,24 +10,24 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 <div class="cbwct-tracking-list">
 	<table>
 		<tr>
-			<td>Order Number:</td>
+			<td><?php echo esc_html__('Order Number', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order->get_id()); ?></td>
 		</tr>
 		<tr>
-			<td>Order Date</td>			
+			<td><?php echo esc_html__('Order Date', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order_data['date_created']->date('d-M-y @ h:i:s A')); ?></td>						
 		</tr>
 		<tr>
-			<td>Order Status</td>
+			<td><?php echo esc_html__('Order Status', 'cbwct'); ?></td>
 			<td><?php echo esc_html(ucwords($order->get_status())); ?></td>	
 		</tr>
 		<tr>
-			<td>Last Update</td>
+			<td><?php echo esc_html__('Last Update', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order_data['date_modified']->date('d-M-y @ h:i:s A')); ?></td>
 		</tr>
 
 			<tr>
-				<td>Product:</td>	
+				<td><?php echo esc_html__('Products', 'cbwct'); ?></td>
 				<td>
 					<ul>
 						<?php 
@@ -42,7 +42,7 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 			</tr>									
 
 		<tr>
-			<td>Customer Name:</td>
+			<td><?php echo esc_html__('Customer Name: ', 'cbwct'); ?> 
 			<?php if(!empty($order_data['shipping']['first_name'])) : ?>
 				<td><?php echo esc_html($order_data['shipping']['first_name']); ?> <?php echo esc_html($order_data['shipping']['last_name']); ?></td>
 			<?php else : ?>
@@ -50,7 +50,7 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 			<?php endif; ?>
 		</tr>
 		<tr>
-			<td>Phone:</td>
+			<td><?Php echo esc_html__('Customer Phone:', 'cbwct'); ?></td>
 			<?php if(!empty($order_data['shipping']['phone'])) : ?>
 				<td><?php echo esc_html($order_data['shipping']['phone']); ?></td>
 			<?php else : ?>
@@ -58,23 +58,23 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 			<?php endif; ?>
 		</tr>
 		<tr>
-			<td>Customer Number:</td>
+			<td><?php echo esc_html__('Customer Number:', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order_data['customer_id']); ?></td>
 		</tr>
 		<tr>
-			<td>Customer Note:</td>
+			<td><?php echo esc_html__('Customer Note:', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order->get_customer_note()); ?></td>
 		</tr>
 		<tr>
-			<td>Delivery Method</td>
+			<td><?php echo esc_html__('Delivery Method', 'cbwct'); ?></td>
 			<td><?php echo esc_html($order->get_shipping_method()); ?></td>
 		</tr>
 		<tr>
-			<td>Payment Method</td>
+			<td><?php echo esc_html__('Payment Method', 'cbwct'); ?></td>
 			<td><?php echo esc_html(CBWCT_ORDER_TRACKER::selected_gateway_name($order->get_payment_method())); ?></td>
 		</tr>
 		<tr>
-			<td>Total Amount</td>
+			<td><?php echo esc_html__('Total Amount', 'cbwct'); ?></td>
 			<td><?php echo esc_html(wc_format_decimal($order->get_total(), 2)); ?></td>
 		</tr>
 	</table>

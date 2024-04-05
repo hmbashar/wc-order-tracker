@@ -12,7 +12,7 @@ $get_phone_number = sanitize_text_field($_POST['phone_number']);
 
 
 if(empty($get_order_number) || empty($get_phone_number)) { // search field empty check
-	apply_filters( 'cbwct_order_number_phone_number_required', 'Order Number & Phone field is required' );
+	apply_filters( 'cbwct_order_number_phone_number_required', esc_html__('Order Number & Phone field is required', 'cbwct' ));
 }else {
 
 	if(!isset($get_order_number)) { //order number empty
@@ -20,7 +20,7 @@ if(empty($get_order_number) || empty($get_phone_number)) { // search field empty
 
 	}else {
 		if(CBWCT_ORDER_TRACKER::order_number_exists($get_order_number) == false) {
-			 echo apply_filters( 'cbwct_order_is_not_found', 'order is not found!', $get_order_number );
+			 echo apply_filters( 'cbwct_order_is_not_found', esc_html__('order is not found!', 'cbwct') , $get_order_number );
 		}else {
 			$order = wc_get_order( $get_order_number ); // set order number
 		
@@ -49,7 +49,7 @@ if(empty($get_order_number) || empty($get_phone_number)) { // search field empty
 						require_once( CBWCT_TRACKER_PATH . '/inc/templates/result.php'); 
 					}
 			}else {
-				echo apply_filters( 'cbwct_order_is_not_found', 'order is not found!', $get_order_number );
+				echo apply_filters( 'cbwct_order_is_not_found', esc_html__('order is not found!', 'cbwct'), $get_order_number );
 			}
 		}
 	}

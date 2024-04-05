@@ -8,27 +8,27 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 
 // Tracking Heading
 function cbwct_order_tracking_heading(){
-	echo __('Order Tracker', 'cbwet');
+	echo esc_html__('Order Tracker', 'cbwet');
 }
 add_filter( 'cbwct_order_tracking_heading', 'cbwct_order_tracking_heading');
 
 // Order Number
 function cbwct_field_text_order_number(){
-	echo __('Order Number', 'cbwet');
+	echo esc_html__('Order Number', 'cbwet');
 }
 add_filter( 'cbwct_field_text_order_number', 'cbwct_field_text_order_number');
 
 
 // Phone Number
 function cbwct_field_text_phone_number(){
-	echo __('Phone Number', 'cbwet');
+	echo esc_html__('Phone Number', 'cbwet');
 }
 add_filter( 'cbwct_field_text_phone_number', 'cbwct_field_text_phone_number');
 
 
 // Submit Button text
 function cbwct_submit_button_text(){
-	echo __('Track Order', 'cbwet');
+	echo esc_html__('Track Order', 'cbwet');
 }
 add_filter( 'cbwct_submit_button_text', 'cbwct_submit_button_text');
 
@@ -55,7 +55,7 @@ add_filter('cbwct_shipped_prograss_percent', 'cbwct_shipped_prograss_percent');
 
 function cbwct_order_is_not_found($value, $order_number) {
 
-	$order_not_found = sprintf('%s Oops! Sorry! %s order is not found! please check order or phone number %s', '<h5 class="cbwct_notice">', $order_number, '</h5>');
+	$order_not_found = sprintf('%s Oops! Sorry! %s order is not found! please check order or phone number %s', '<h5 class="cbwct_notice">', esc_attr($order_number), '</h5>');
 
 	return $order_not_found;
 }

@@ -45,16 +45,15 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 		}
 		// Progress bar text for invalid order
 		public static function order_text($status){
+
+			if ('cancelled' === $status) {
+				printf(esc_html__('The order has been %s, Please contact support', 'cbwct'), esc_html(ucwords($status)));
+			} elseif ('refunded' === $status) {
+				printf(esc_html__('The order has been %s, Please contact support', 'cbwct'), esc_html(ucwords($status)));
+			} elseif ('failed' === $status) {
+				printf(esc_html__('The order has been %s, Please contact support', 'cbwct'), esc_html(ucwords($status)));
+			}
 			
-			if('cancelled' === $status) {
-				printf('The order has been %s, Please contact support', ucwords($status));
-			}
-			elseif('refunded' === $status) {
-				printf('The order has been %s, Please contact support', ucwords($status));
-			}
-			elseif('failed' === $status) {
-				printf('The order has been %s, Please contact support', ucwords($status));
-			}
 
 		}
 
@@ -97,7 +96,7 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 				echo $payment_method_title;
 			}else {
 
-				echo 'No exists';
+				echo esc_html__('No exists', 'cbwct');
 			}
 
 		}
@@ -126,7 +125,7 @@ function cbwct_wc_order_tracking_result() {
 
 		require_once(CBWCT_TRACKER_PATH . '/inc/process.php');
 	}else {
-		echo 'Invalid User';
+		echo esc_html__('Invalid User', 'cbwct');
 	}
 
 	exit;

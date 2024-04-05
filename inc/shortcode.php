@@ -10,7 +10,7 @@ function cbwct_wc_shortcode($attrs, $content = NULL) {
 	ob_start();
 	extract(shortcode_atts(array(
 
-		'post_type' =>'post'
+		'post_type' =>'shop_order'
 
 	), $attrs));
 
