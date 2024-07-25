@@ -2,9 +2,9 @@
 Contributors: hmbashar
 Tags: woocommerce order tracker, order tracker,shipping, delivery tracker
 Requires at least: 4.7
-Tested up to: 6.5
-Stable tag: 1.2.2
-Requires PHP: 7.4
+Tested up to: 6.6
+Stable tag: 1.2.3
+Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -64,6 +64,9 @@ or if he/she inputs without country code and only mobile number like this 123456
 2. Order On-Hold
 
 == Changelog ==
+= 1.2.3 =
+* order number searching issue fix
+
 = 1.2.2 =
 * text doamin added and security updated
 

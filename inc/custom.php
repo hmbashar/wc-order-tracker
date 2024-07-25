@@ -102,17 +102,12 @@ if(!class_exists('CBWCT_ORDER_TRACKER')) {
 		}
 
 		// check if order number exists
-		public static function order_number_exists($order_number)
-			{   
-				if(get_post_type($order_number) == "shop_order")
-				{
-					return true;
-				}
-				else
-				{
-				return false;
-				}
-			}
+
+    public static function order_number_exists($order_number) {
+        $order = wc_get_order($order_number);
+        return ($order && $order->get_id() != null);
+    }
+
 
 
 	}

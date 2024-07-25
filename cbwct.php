@@ -4,7 +4,7 @@
 	Plugin URI: https://wordpress.org/plugins/wc-order-tracker/
 	Description: Your customer can track his/her order on your WooCommerce website easily, woocommerce order tracking system with ajax
 	Author: Md Abul Bashar
-	Version: 1.2.2
+	Version: 1.2.3
 	Author URI: https://facebook.com/hmbashar
 	Text Domain: cbwct
 
@@ -30,9 +30,8 @@ function cbwct_basic_scripts(){
 	wp_localize_script( 'cbwct-tracker-ajax', 'cbwct_tracker', array( 'ajaxurl'	=> admin_url('admin-ajax.php')) ); 
 }
 add_action('wp_enqueue_scripts','cbwct_basic_scripts');
-
-
 //Include additional file
 require_once( CBWCT_TRACKER_PATH . '/inc/custom.php' );
 require_once( CBWCT_TRACKER_PATH . '/inc/shortcode.php' );
 require_once( CBWCT_TRACKER_PATH . '/inc/hooks.php' );
+
