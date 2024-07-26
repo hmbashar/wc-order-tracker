@@ -13,7 +13,7 @@ An easy-to-use WooCommerce order tracker with Ajax. Use as a page template or vi
 
 ## Description
 
-Hi, are you using WooCommerce? You can use this plugin for your customers to track their order status on your website. It's a WooCommerce order tracking system with Ajax. You can use it in a very easy way, like making a page template or using the `[cbwct-order-tracker]` shortcode, anytime, anywhere, and it's also working with Ajax.
+Hi, are you using WooCommerce? You can use this plugin to allow your customers to track their order status on your website. It's a WooCommerce order tracking system with Ajax. You can use it very easily, either by creating a page template or by using the `[cbwct-order-tracker]` shortcode, anytime and anywhere. It also works seamlessly with Ajax.
 
 Plugin on [WordPress Directory](https://wordpress.org/plugins/wc-order-tracker)
 
@@ -22,70 +22,70 @@ Plugin on [WordPress Directory](https://wordpress.org/plugins/wc-order-tracker)
 
 ### Filter Hooks
 
-- `cbwct_pending_prograss_percent`
-- `cbwct_on_hold_prograss_percent`
-- `cbwct_processing_prograss_percent`
-- `cbwct_shipped_prograss_percent`
-- `cbwct_completed_prograss_percent`
+- `cbwct_pending_progress_percent`
+- `cbwct_on_hold_progress_percent`
+- `cbwct_processing_progress_percent`
+- `cbwct_shipped_progress_percent`
+- `cbwct_completed_progress_percent`
 
 ## Frequently Asked Questions
 
 ### How can I use the plugin?
 
-You can use the plugin by template or shortcode. You need to make a page and then select the "Order Tracker for WooCommerce" template from your page attribute option.
+You can use the plugin either by creating a template or using a shortcode. To use the template, create a page and then select the "Order Tracker for WooCommerce" template from your page attribute options.
 
 ### Do you have a shortcode for using the plugin anywhere?
 
-Yes, you have a shortcode for the plugin. You can use the shortcode `[cbwct-order-tracker]` to show the search form with search results anywhere.
+Yes, you can use the shortcode `[cbwct-order-tracker]` to display the search form and search results anywhere on your site.
 
 ### Do you support hooks?
 
-Yes, you have some hooks for developers:
+Yes, there are several hooks available for developers:
 
-- `cbwct_pending_prograss_percent`
-- `cbwct_on_hold_prograss_percent`
-- `cbwct_processing_prograss_percent`
-- `cbwct_shipped_prograss_percent`
-- `cbwct_completed_prograss_percent`
+- `cbwct_pending_progress_percent`
+- `cbwct_on_hold_progress_percent`
+- `cbwct_processing_progress_percent`
+- `cbwct_shipped_progress_percent`
+- `cbwct_completed_progress_percent`
 
-### Order and mobile number are correct but still showing "doesn't found"?
+### The order and mobile number are correct, but the status still shows "not found." What should I do?
 
-Make sure your customer has used the exact same number for tracking that they input when placing the order. For example, if your customer inputs their phone number with a country code when placing an order, then they need to use the exact same number with the country code for tracking.
+Ensure that your customer has used the exact same phone number for tracking that they used when placing the order. For example, if your customer inputs their phone number with a country code when placing an order, they need to use the exact same number with the country code for tracking.
 
-If your customer inputs this format `+88` (country code) `123456789` (mobile number) like `+88123456789`, then they need to input the exact same number like `+88123456789` for tracking.
+If your customer inputs their phone number in the format `+88` (country code) `123456789` (mobile number) like `+88123456789`, they need to use the exact same format for tracking.
 
-Or if they input without the country code and only the mobile number like `123456789`, then they need to input without the country code like `123456789` for tracking.
+Alternatively, if they input the number without a country code like `123456789`, they need to use the same format without the country code for tracking.
 
 ## Screenshots
 
 1. Cancelled order
-2. Order Shipped
-3. Order Processing
-4. Order On-Hold
+2. Order shipped
+3. Order processing
+4. Order on hold
 
 ## Changelog
 
 ### 1.2.3
 
-- Order number searching issue fix
+- Fixed order number searching issue
 
 ### 1.2.2
 
-- Text domain added and security updated
+- Added text domain and updated security
 
 ### 1.1
 
-- Fixed search form broken issue
+- Fixed broken search form issue
 - Added "Shipped" status
-- Shortcode error fix
-- Few changes
+- Fixed shortcode error
+- Made a few changes
 
 ### 1.0
 
-- Release new version
+- Initial release
 
 ## Upgrade Notice
 
 ### 1.0
 
-Upgrade notices describe the reason a user should upgrade.
+Upgrade notices describe the reasons why a user should upgrade.
