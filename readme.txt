@@ -66,6 +66,9 @@ Alternatively, if they input the number without a country code like 123456789, t
 
 == Changelog ==
 
+= 1.2.4 =
+* fix translation issues.
+
 = 1.2.3 =
 * Fixed order number searching issue
 
