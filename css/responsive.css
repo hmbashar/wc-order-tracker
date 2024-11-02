@@ -1,0 +1,123 @@
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.cbwct-tracking-title h2 {
+    font-size: 20px;
+}
+.cbwct-tracking {
+    padding: 10px;
+}
+.cbwct-tracking-from {
+    padding: 0 10px;
+}
+.cbwct-tracking-from form input[type="text"] {
+   flex-basis: 100%;
+}
+.cbwct-tracking-form-field {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+.cbwct-tracking-container {
+    padding: 0px 5px;
+}
+.cbwct-tracking {
+    width: 100%;
+    margin: 0 auto;
+}
+table tr td:first-child {
+    min-width: 150px !important;
+    line-height: 30px;
+}
+.cbwct-tracking-container {
+    margin-top: 18px;
+}
+.cbwct-tracking-title {
+    text-align: center;
+}
+.cbwct-tracking-from form label {
+    padding-right: 10px;
+    font-weight: 400;
+}
+.cbwct-tracking-from {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.cbwct-tracking-title h2 {
+    font-size: 16px;
+}
+
+@keyframes cbwct_left_to_right {
+  100% {
+    transform: translateX(60px);
+  }
+}
+
+.cbwct_shipping.active {
+    animation: cbwct_left_to_right 2s linear infinite;
+}
+
+.cbwct-tracking-form-area {
+   flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+
+.cbwct-tracking-form-field {
+  flex-basis: 100%;
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+}
+.cbwct-tracking-from form input[type="text"] {
+    flex-basis: 100%;
+     margin-right: 0;
+}
+
+}
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.cbwct-tracking-title h2 {
+    font-size: 18px;
+}
+
+@keyframes cbwct_left_to_right {
+
+  100% {
+    transform: translateX(65px);
+  }
+}
+.cbwct_shipping.active {
+    animation: cbwct_left_to_right 2s linear infinite;
+}
+.cbwct-tracking-form-area {   
+    text-align: center;
+}
+.cbwct-tracking-form-field {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+.cbwct-tracking-from form input[type="text"] {
+    flex-basis: 100%;    
+}
+
+
+}
+
+
