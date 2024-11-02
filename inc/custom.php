@@ -166,13 +166,17 @@ add_filter( 'template_include', 'cbwct_tracker_load_tamplate' );
 // Register a custom order status
 add_action('init', 'cbwct_register_custom_order_statuses');
 function cbwct_register_custom_order_statuses() {
-    register_post_status('wc-shipped ', array(
-        'label' => __( 'Shipped', 'woocommerce' ),
+    register_post_status('wc-shipped', array(
+        'label' => __( 'Shipped', 'cbwet' ),
         'public' => true,
         'exclude_from_search' => false,
         'show_in_admin_all_list' => true,
         'show_in_admin_status_list' => true,
-        'label_count' => _n_noop('Shipped <span class="count">(%s)</span>', 'Shipped <span class="count">(%s)</span>')
+        'label_count' => _n_noop(
+            'Shipped <span class="count">(%s)</span>', 
+            'Shipped <span class="count">(%s)</span>', 
+            'cbwet'
+        )
     ));
 }
 
@@ -186,7 +190,7 @@ function cbwct_add_custom_order_statuses($order_statuses) {
     foreach ($order_statuses as $key => $status) {
         $new_order_statuses[$key] = $status;
         if ('wc-processing' === $key) {
-            $new_order_statuses['wc-shipped'] = __('Shipped', 'woocommerce' );
+            $new_order_statuses['wc-shipped'] = __('Shipped', 'cbwet' );
         }
     }
     return $new_order_statuses;
@@ -201,7 +205,7 @@ function cbwct_custom_dropdown_bulk_actions_shop_order( $actions ) {
     // add new order status before processing
     foreach ($actions as $key => $action) {
         if ('mark_processing' === $key)
-            $new_actions['mark_shipped'] = __( 'Change status to shipped', 'woocommerce' );
+            $new_actions['mark_shipped'] = __( 'Change status to shipped', 'cbwet' );
 
         $new_actions[$key] = $action;
     }
@@ -220,7 +224,7 @@ function cbwct_add_custom_order_status_actions_button( $actions, $order ) {
         // Set the action button
         $actions[$action_slug] = array(
             'url'       => wp_nonce_url( admin_url( 'admin-ajax.php?action=woocommerce_mark_order_status&status='.$action_slug.'&order_id='.$order->get_id() ), 'woocommerce-mark-order-status' ),
-            'name'      => __( 'Shipped', 'woocommerce' ),
+            'name'      => __( 'Shipped', 'cbwet' ),
             'action'    => $action_slug,
         );
     }

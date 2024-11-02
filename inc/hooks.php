@@ -34,10 +34,15 @@ add_filter( 'cbwct_submit_button_text', 'cbwct_submit_button_text');
 
 
 // Order and Phone number is required
-function cbwct_order_number_phone_number_required(){
-	printf('%s Order Number & Phone field is required %s', '<h3 class="cbwct_notice">', '</h3>');
+function cbwct_order_number_phone_number_required() {
+    // Return the formatted string with translation support
+    return sprintf(
+        '<h3 class="cbwct_notice">%s</h3>',
+        esc_html__('Order Number & Phone field is required', 'cbwet')
+    );
 }
-add_filter( 'cbwct_order_number_phone_number_required', 'cbwct_order_number_phone_number_required');
+add_filter('cbwct_order_number_phone_number_required', 'cbwct_order_number_phone_number_required');
+
 
 // set limit for showing title in tracking page
 function cbwct_product_title_trim_words($value) {
@@ -54,9 +59,18 @@ add_filter('cbwct_shipped_prograss_percent', 'cbwct_shipped_prograss_percent');
 
 
 function cbwct_order_is_not_found($value, $order_number) {
+    // Return the formatted string with translation support
+    $order_not_found = sprintf(
+        '%s %s %s %s',
+        '<h5 class="cbwct_notice">',
+        esc_html__('Oops! Sorry!', 'cbwet'),
+        sprintf(
+            esc_html__('%s order is not found! Please check order or phone number.', 'cbwet'),
+            esc_html($order_number)
+        ),
+        '</h5>'
+    );
 
-	$order_not_found = sprintf('%s Oops! Sorry! %s order is not found! please check order or phone number %s', '<h5 class="cbwct_notice">', esc_attr($order_number), '</h5>');
-
-	return $order_not_found;
+    return $order_not_found;
 }
 add_filter('cbwct_order_is_not_found', 'cbwct_order_is_not_found', 10, 2);
