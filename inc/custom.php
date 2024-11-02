@@ -6,24 +6,36 @@ if ( !defined( 'ABSPATH' ) ) exit;
 
 // Show Admin notice if Woocommerce plugin isn't installed.
 
-function cbwct_notice_for_wc_admin_notice(){    
-
-	if (!class_exists( 'WooCommerce' )) {  
-		if( ! function_exists('get_plugin_data') ){
-			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		}
-		$plugin_data = get_plugin_data( CBWCT_TRACKER_PATH .'cbwct.php' );
-		$woo_url = 'https://wordpress.org/plugins/woocommerce/';
-		
-		printf('<div class="notice notice-error">
-				<p><a href="%s" target="_blank">Woocommerce</a> Is Required! Woocommerce plugin needs to activated if you want to install the <strong>"%s"</strong> plugin.</p>
-			</div>', $woo_url, $plugin_data['Name']);
-	}else {
-		return false;
-	}
- 
+function cbwct_notice_for_wc_admin_notice() {    
+    // Check if WooCommerce is not active
+    if (!class_exists('WooCommerce')) {  
+        // Include the plugin.php file if the get_plugin_data function is not available
+        if (!function_exists('get_plugin_data')) {
+            require_once(ABSPATH . 'wp-admin/includes/plugin.php');
+        }
+        
+        // Get plugin data
+        $plugin_data = get_plugin_data(CBWCT_TRACKER_PATH . 'cbwct.php');
+        $woo_url = 'https://wordpress.org/plugins/woocommerce/';
+        
+        // Display the admin notice with proper translation and escaping
+        printf(
+            '<div class="notice notice-error">
+                <p>%s</p>
+            </div>',
+            sprintf(
+                /* translators: %1$s is the WooCommerce link, %2$s is the plugin name */
+                esc_html__('The %2$s plugin requires WooCommerce to be installed and activated. Please install and activate WooCommerce from %1$s.', 'cbwet'),
+                '<a href="' . esc_url($woo_url) . '" target="_blank">' . esc_html__('the WordPress plugin repository', 'cbwet') . '</a>',
+                esc_html($plugin_data['Name'])
+            )
+        );
+    } else {
+        return false;
+    }
 }
 add_action('admin_notices', 'cbwct_notice_for_wc_admin_notice');
+
 
 
 

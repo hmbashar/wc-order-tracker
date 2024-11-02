@@ -4,7 +4,7 @@
 	Plugin URI: https://wordpress.org/plugins/wc-order-tracker/
 	Description: Your customer can track his/her order on your WooCommerce website easily, woocommerce order tracking system with ajax
 	Author: Md Abul Bashar
-	Version: 1.2.3
+	Version: 1.2.4
 	Author URI: https://facebook.com/hmbashar
 	Text Domain: cbwct
 	Requires Plugins: woocommerce
