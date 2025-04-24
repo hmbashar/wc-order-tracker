@@ -1,0 +1,24 @@
+{
+    "name": "cbwct/wc-order-tracker",
+    "description": "A WooCommerce order tracking plugin.",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "squizlabs/php_codesniffer": "*",
+        "wp-cli/i18n-command": "*",
+        "jakub-onderka/php-parallel-lint": "*"
+    },
+    "scripts": {
+        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "make-pot": "wp i18n make-pot . languages/cbwct.pot"
+    },
+    "autoload": {
+        "psr-4": {
+            "CBWCT\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

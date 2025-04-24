@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires Plugins: woocommerce
 
-An easy-to-use WooCommerce order tracker with Ajax. Use as a page template or via [cbwct-order-tracker] shortcode for instant updates anywhere.
+A simple yet powerful order tracking system for WooCommerce, complete with Ajax-powered instant updates. Use as a page template or via the [cbwct-order-tracker] shortcode.
 
 == Description ==
 
@@ -65,6 +65,9 @@ Alternatively, if they input the number without a country code like 123456789, t
 4. Order on hold
 
 == Changelog ==
+= 1.2.5 =
+* Improved and fixed translation support.
+
 
 = 1.2.4 =
 * fix translation issues.
