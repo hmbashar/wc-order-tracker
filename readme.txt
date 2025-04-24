@@ -1,8 +1,8 @@
 === Order Tracker for WooCommerce ===
 Contributors: hmbashar
 Tags: woocommerce order tracker, order tracker, shipping, delivery tracker
-Requires at least: 4.7
-Tested up to: 6.7
+Requires at least: 5.4
+Tested up to: 6.8
 Stable tag: 1.2.4
 Requires PHP: 8.0
 License: GPLv2 or later
