@@ -1,6 +1,6 @@
 === Order Tracker for WooCommerce ===
 Contributors: hmbashar
-Tags: woocommerce order tracker, order tracker, shipping, delivery tracker
+Tags: woocommerce, order tracking, shipping, tracking, delivery tracking
 Requires at least: 5.4
 Tested up to: 6.8
 Stable tag: 1.2.6
@@ -9,7 +9,8 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires Plugins: woocommerce
 
-A simple yet powerful order tracking system for WooCommerce, complete with Ajax-powered instant updates. Use as a page template or via the [cbwct-order-tracker] shortcode.
+A simple WooCommerce order tracker with Ajax updates. Use a page template or the [cbwct-order-tracker] shortcode.
+
 
 == Description ==
 
