@@ -36,7 +36,7 @@ add_action('wp_enqueue_scripts','cbwct_basic_scripts');
 function cbwct_tracker_textdomain() {
 	load_plugin_textdomain( 'cbwct', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
-add_action( 'plugins_loaded', 'cbwct_tracker_textdomain' );
+add_action( 'init', 'cbwct_tracker_textdomain' );
 
 
 //Include additional file
