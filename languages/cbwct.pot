@@ -1,0 +1,110 @@
+# Copyright (C) 2025 Md Abul Bashar
+# This file is distributed under the same license as the Order Tracker for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Order Tracker for WooCommerce 1.2.5\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-order-tracker\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-24T18:27:33+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: cbwct\n"
+
+#. Plugin Name of the plugin
+#: cbwct.php
+msgid "Order Tracker for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: cbwct.php
+msgid "https://wordpress.org/plugins/wc-order-tracker/"
+msgstr ""
+
+#. Description of the plugin
+#: cbwct.php
+msgid "Allow customers to easily track their orders on your WooCommerce store with this order tracking system, powered by AJAX."
+msgstr ""
+
+#. Author of the plugin
+#: cbwct.php
+msgid "Md Abul Bashar"
+msgstr ""
+
+#. Author URI of the plugin
+#: cbwct.php
+msgid "https://facebook.com/hmbashar"
+msgstr ""
+
+#: inc/custom.php:62
+#: inc/custom.php:64
+#: inc/custom.php:66
+msgid "The order has been %s, Please contact support"
+msgstr ""
+
+#: inc/custom.php:111
+msgid "No exists"
+msgstr ""
+
+#: inc/custom.php:135
+msgid "Invalid User"
+msgstr ""
+
+#: inc/process.php:14
+msgid "Order Number & Phone field is required"
+msgstr ""
+
+#: inc/process.php:37
+msgid "The provided phone number does not match our records."
+msgstr ""
+
+#: inc/templates/result.php:13
+msgid "Order Number"
+msgstr ""
+
+#: inc/templates/result.php:17
+msgid "Order Date"
+msgstr ""
+
+#: inc/templates/result.php:21
+msgid "Order Status"
+msgstr ""
+
+#: inc/templates/result.php:25
+msgid "Last Update"
+msgstr ""
+
+#: inc/templates/result.php:30
+msgid "Products"
+msgstr ""
+
+#: inc/templates/result.php:45
+msgid "Customer Name: "
+msgstr ""
+
+#: inc/templates/result.php:53
+msgid "Customer Phone:"
+msgstr ""
+
+#: inc/templates/result.php:61
+msgid "Customer Number:"
+msgstr ""
+
+#: inc/templates/result.php:65
+msgid "Customer Note:"
+msgstr ""
+
+#: inc/templates/result.php:69
+msgid "Delivery Method"
+msgstr ""
+
+#: inc/templates/result.php:73
+msgid "Payment Method"
+msgstr ""
+
+#: inc/templates/result.php:77
+msgid "Total Amount"
+msgstr ""
