@@ -76,6 +76,14 @@ Alternatively, if they input the number without a country code like `123456789`,
 
 ## Changelog
 
+### 1.2.7
+
+- Textdomain issue solved.
+
+### 1.2.5
+
+- Improved and fixed translation support.
+
 ### 1.2.3
 
 - Fixed order number searching issue

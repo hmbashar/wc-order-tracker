@@ -74,6 +74,9 @@ Alternatively, if they input the number without a country code like 123456789, t
 4. Order on hold
 
 == Changelog ==
+= 1.2.7 =
+* Textdomain Issue solved.
+
 = 1.2.5 =
 * Improved and fixed translation support.
 
