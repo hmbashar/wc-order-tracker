@@ -3,13 +3,24 @@
 **Contributors:** hmbashar  
 **Tags:** woocommerce order tracker, order tracker, shipping, delivery tracker  
 **Requires at least:** 4.7  
-**Tested up to:** 6.6  
-**Stable tag:** 1.2.3  
+**Tested up to:** 6.8  
+**Stable tag:** 1.2.7  
 **Requires PHP:** 8.0  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html  
 
 An easy-to-use WooCommerce order tracker with Ajax. Use as a page template or via `[cbwct-order-tracker]` shortcode for instant updates anywhere.
+
+
+## 🚀 Plugin Ownership for Sale
+
+This plugin is currently up for **ownership transfer**.
+
+If you're interested in taking it further — whether by releasing a Pro version, adding more features, or just continuing its development — feel free to reach out.
+
+📩 Contact: [bashar.supreox@gmail.com](mailto:bashar.supreox@gmail.com)  
+🔗 [Click here for more details](https://lnkd.in/d8MJz9PH)
+
 
 ## Description
 

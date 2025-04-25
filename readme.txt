@@ -3,7 +3,7 @@ Contributors: hmbashar
 Tags: woocommerce, order tracking, shipping, tracking, delivery tracking
 Requires at least: 5.4
 Tested up to: 6.8
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,6 +13,14 @@ A simple WooCommerce order tracker with Ajax updates. Use a page template or the
 
 
 == Description ==
+
+= Plugin Ownership for Sale =
+
+This plugin is currently up for ownership transfer. If you're interested in taking over and continuing its development, feel free to get in touch.
+
+📩 Contact: [email](mailto:bashar.supreox@gmail.com)  
+🔗 [Click here for more details](https://lnkd.in/d8MJz9PH)
+
 
 Hi, are you using WooCommerce? You can use this plugin to allow your customers to track their order status on your website. It's a WooCommerce order tracking system with Ajax. You can use it very easily, either by creating a page template or by using the [cbwct-order-tracker] shortcode, anytime and anywhere. It also works seamlessly with Ajax.
 
