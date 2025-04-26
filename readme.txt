@@ -14,6 +14,9 @@ A simple WooCommerce order tracker with Ajax updates. Use a page template or the
 
 == Description ==
 
+Hi, are you using WooCommerce? You can use this plugin to allow your customers to track their order status on your website. It's a WooCommerce order tracking system with Ajax. You can use it very easily, either by creating a page template or by using the [cbwct-order-tracker] shortcode, anytime and anywhere. It also works seamlessly with Ajax.
+
+
 = Plugin Ownership for Sale =
 
 This plugin is currently up for ownership transfer. If you're interested in taking over and continuing its development, feel free to get in touch.
@@ -22,7 +25,6 @@ This plugin is currently up for ownership transfer. If you're interested in taki
 🔗 [Click here for more details](https://lnkd.in/d8MJz9PH)
 
 
-Hi, are you using WooCommerce? You can use this plugin to allow your customers to track their order status on your website. It's a WooCommerce order tracking system with Ajax. You can use it very easily, either by creating a page template or by using the [cbwct-order-tracker] shortcode, anytime and anywhere. It also works seamlessly with Ajax.
 
 Contributions are welcome on [GitHub](https://github.com/hmbashar/wc-order-tracker).
 
